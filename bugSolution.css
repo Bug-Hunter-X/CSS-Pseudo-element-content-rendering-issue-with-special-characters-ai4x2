@@ -1,0 +1,14 @@
+/*bug.css*/
+.element::before {
+  content: "This string has a 'single quote' and a \"double quote\";
+}
+
+/*bugSolution.css*/
+.element::before {
+  content: "This string has a \'single quote\' and a \"double quote\";
+}
+/*or*/
+.element {
+  content: attr(data-content);
+}
+<div class="element" data-content="This string has a 'single quote' and a \"double quote\"></div>
