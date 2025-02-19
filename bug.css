@@ -1,0 +1,1 @@
+The CSS code has an unexpected behavior when a pseudo-element (like :before or :after) is used with content property and the content is a string with a special character like a single quote or double quote.  The browser might render the content incorrectly or throw an error in some cases.
